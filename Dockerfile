@@ -10,8 +10,8 @@ RUN pnpm install
 
 COPY . .
 
-RUN pnpx prisma generate
-RUN pnpx prisma db push
+RUN pnpm prisma generate
+RUN pnpm prisma db push
 
 RUN pnpm run build
 
